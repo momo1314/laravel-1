@@ -14,5 +14,9 @@
 Route::get('/', function () {
     return view('so');
 });
+Route::any('/',['middleware'=>'find'],function () {//
+});
 Route::any('Classm', 'IndexController@Classm');
+Route::any('/',['middleware'=>'find'],function () {//
+});
 Route::any('std', 'IndexController@std');
